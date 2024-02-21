@@ -1,0 +1,19 @@
+{
+  "name": "ssp-test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SSP-TEST"
+  },
+  "keywords": [
+    "SSP"
+  ],
+  "author": "DayhawkM",
+  "license": "UNLICENCED",
+  "type": "module"
+}
