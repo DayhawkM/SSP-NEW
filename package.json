@@ -15,5 +15,8 @@
   ],
   "author": "DayhawkM",
   "license": "UNLICENCED",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
