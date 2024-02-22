@@ -1,0 +1,22 @@
+{
+  "name": "additional-routes",
+  "version": "1.0.0",
+  "description": "routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "route"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SSP-TEST"
+  },
+  "keywords": [
+    "route"
+  ],
+  "author": "DayhawkM",
+  "license": "UNLICENCED",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
