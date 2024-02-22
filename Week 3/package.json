@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "week-3",
+  "version": "1.0.0",
+  "description": "week3",
+  "main": "index.js",
+  "scripts": {
+    "test": "ssp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SSP-TEST"
+  },
+  "keywords": [
+    "ssp"
+  ],
+  "author": "DayhawkM",
+  "license": "UNLICENCED",
+  "type":"module"
+}
