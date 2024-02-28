@@ -11,21 +11,19 @@ Copyright (c) 2024 Staffordshire University - All Rights Reserved
 </head>
 
 <body>
-<%- include("partials/nav.html") -%>
 <main class="centered-main">
 <section>
 <header>
 <h1>Uh Oh!</h1>
 </header>
 <h2>You seem to be a little bit lost. Let us help you out...</h2>
-<h3>Error 404 Page Not Found: <span class="error-url"><%=url%></span></h3>
+<h3>Error 401 Page Not Found: <span class="error-url"><%=url%></span></h3>
 <%- include("partials/useful-links.html") -%>
 </section>
 <section>
-<img class="error-img" src="assets/img/404.png" alt="404 Not Found">
+<img class="error-img" src="assets/img/401.png" alt="404 Not Found">
 </section>
 </main>
-<%- include("partials/footer.html") -%>
 </body>
 
 </html>
