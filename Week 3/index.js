@@ -57,6 +57,17 @@ app.get("/break-it", (req, res) => {
     throw new Error("Broken It");
 });
 
+// Route handler for /tickets
+app.get("/tickets", (req,res) => {
+    // Local Variables
+    let fakeDatabase = [
+        { name: "Space Hill", price: 93.0 },
+        { name: "Little Lightning Bank", price: 30.0 },
+        { name: "Spooky Bungalow", price: 12.0 }
+    ];
+    res.render("tickets", { user: "Luke", data: fakeDatabase });
+});
+
 // Route handler for generating a 401 error
 app.get('/unauth-it', function(req, res) {
     const error = new Error("Unauthorized It");
@@ -80,16 +91,6 @@ app.use((req, res, next) => {
     });
 });
 
-// Route handler for /tickets
-app.get("/tickets", (req,res) => {
-    // Local Variables
-    let fakeDatabase = [
-        { name: "Space Hill", price: 93.0 },
-        { name: "Little Lightning Bank", price: 30.0 },
-        { name: "Spooky Bungalow", price: 12.0 }
-    ];
-    res.render("tickets", { user: "Luke", data: fakeDatabase });
-});
 
 // Generic error handling middleware
 app.use((err, req, res, next) => {
