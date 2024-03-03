@@ -1,9 +1,6 @@
-'use strict';
-
+'use strict'
 // Imports
 import { MongoClient } from "mongodb";
-
-// This will allow for the connection to be made and later specifying which database to work with.
 
 // Module Constants
 const dbName = "SSP";
@@ -17,12 +14,14 @@ const dbClient = new MongoClient(url);
 let conn;
 let db;
 
-try { conn = await dbClient.connect();
- } 
- catch (err)
-  { 
-    console.error(err); 
+try
+{
+conn = await dbClient.connect();
 }
- db = conn.db(dbName);
+catch(err)
+{
+console.error(err);
+}
+db = conn.db(dbName);
 
- export default db;
+export default db;
