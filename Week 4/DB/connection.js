@@ -4,9 +4,9 @@ import { MongoClient } from "mongodb";
 
 // Module Constants
 const dbName = "SSP";
-const dbUName = encodeURIComponent("mdayhawk");
-const dbPass = encodeURIComponent("Cartoon.311");
-const url = `mongodb+srv://${dbUName}:${dbPass}@ssp.zuogj4k.mongodb.net/?retryWrites=true&w=majority`;
+const dbUName = encodeURIComponent("dayhawkm");
+const dbPass = encodeURIComponent("Cyclops44");
+const url = `mongodb+srv://${dbUName}:${dbPass}@ssp.kupiwff.mongodb.net/?retryWrites=true&w=majority`;
 
 // Module Objects
 const dbClient = new MongoClient(url);
@@ -17,9 +17,11 @@ let db;
 try
 {
 conn = await dbClient.connect();
+console.log("Conn");
 }
 catch(err)
 {
+    console.error("HERE");
 console.error(err);
 }
 db = conn.db(dbName);

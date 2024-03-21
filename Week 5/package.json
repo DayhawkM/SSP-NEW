@@ -1,0 +1,25 @@
+{
+  "name": "week-5",
+  "version": "1.0.0",
+  "description": "wk5",
+  "main": "index.js",
+  "scripts": {
+    "test": "wk5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SSP-TEST"
+  },
+  "keywords": [
+    "ssp"
+  ],
+  "author": "mdayhawk",
+  "license": "UNLICENCED",
+  "type":"module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3"
+  }
+}
